@@ -6,7 +6,7 @@ const myOnBirthday = (isKayoSick) => {
             } else {
                 reject(new Error("im sad"))
             }
-        })
+        }, 500)
     })
 }
 
