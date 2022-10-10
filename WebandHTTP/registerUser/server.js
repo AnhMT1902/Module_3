@@ -23,7 +23,6 @@ const server = http.createServer((req, res) => {
                 dataHtml = dataHtml.replace('{email}', userInfo.email);
                 dataHtml = dataHtml.replace('{password}', userInfo.password);
                 res.writeHead(200, {'Content-Type': 'text/html'})
-                console.log(dataHtml)
                 res.write(dataHtml);
                 return res.end()
             });
